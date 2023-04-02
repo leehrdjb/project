@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>신제품</title>
+  </head>
+  <body>
+    <h1>스모키바비큐와퍼</h1>
+    
+    <!-- 클릭할 이미지 -->
+    <img id="스모키바비큐와퍼" src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/f1bf0461-7a21-411b-b8d4-64321fd16318.png" alt="이미지" />
+
+    <script>
+      // 클릭 이벤트 처리 함수
+      function handleImageClick() {
+        fetch('burger') // 서버에서 HTML 파일 요청
+          .then((response) => response.text()) // 응답 처리
+          .then((html) => (document.body.innerHTML = html)) // HTML 파일을 현재 페이지에 삽입
+          .catch((error) => console.error(error)); // 에러 처리
+      }
+
+      // 이미지 요소 참조
+      var myImage = document.getElementById("스모키바비큐와퍼");
+
+      // 클릭 이벤트 등록
+      myImage.addEventListener("click", handleImageClick);
+    </script>
+  </body>
+</html>

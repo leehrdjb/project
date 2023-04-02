@@ -1,0 +1,9 @@
+.head_menuWrap .logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 83px;
+    height: 82px;
+    text-indent: -9999em;
+    background: url(../img/logo_header.51e1a8b7.gif) no-repeat 0 0;
+}
